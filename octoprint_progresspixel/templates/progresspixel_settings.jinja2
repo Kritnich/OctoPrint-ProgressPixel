@@ -1,0 +1,32 @@
+<form class="form-horizontal">
+    <div class="control-group">
+        <label class="control-label">{{ _('LED Count') }}</label>
+        <div class="controls">
+            <input type="number" min="1" class="input-block-level" data-bind="value: settings.plugins.progresspixel.led_count">
+        </div>
+    </div>
+    <div class="control-group">
+        <label class="control-label">{{ _('Pin') }}</label>
+        <div class="controls">
+            <input type="number" class="input-block-level" data-bind="value: settings.plugins.progresspixel.led_pin">
+        </div>
+    </div>
+    <div class="control-group">
+        <label class="control-label">{{ _('Brightness') }}</label>
+        <div class="controls">
+            <input type="number" min="0" max="255" class="input-block-level" data-bind="value: settings.plugins.progresspixel.led_brightness">
+        </div>
+    </div>
+    <div class="control-group">
+        <label class="control-label">{{ _('Background Color') }}</label>
+        <div class="controls">
+            <input class="input-block-level jscolor" data-bind="value: settings.plugins.progresspixel.led_background_color" type="text">
+        </div>
+    </div>
+    <div class="control-group">
+        <label class="control-label">{{ _('Bar Color') }}</label>
+        <div class="controls">
+            <input class="input-block-level jscolor" data-bind="value: settings.plugins.progresspixel.led_bar_color" type="text">
+        </div>
+    </div>
+</form>
