@@ -8,7 +8,7 @@ A plugin to control a strip of NeoPixels (ws2812b) like a progress bar.
 
 You need a strip of Neopixels of arbitrary length that you are going to control with this. How you wire them up is up to you, but the data line must be attached to the Raspberry Pi along with a connection to ground. For example: 
 
-![wiring example](/uploads/19316fa12e105ec4bd46c0a18d7471c3/ws2812b_rpi_wiring.svg)
+![wiring example](https://git.maglab.space/kritnich/octoprint-progresspixel/uploads/19316fa12e105ec4bd46c0a18d7471c3/ws2812b_rpi_wiring.svg)
 
 ### Installation
 
