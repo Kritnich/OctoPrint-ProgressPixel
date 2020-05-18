@@ -53,10 +53,12 @@ class ProgressPixelPlugin(
     def on_event(self, event, payload):
         # Shutting all LEDs down if a print ends for whatever reason
         if event in ("PrintFailed", "PrintDone", "PrintCancelled"):
+            self._logger.debug("Clearing LEDs after event %s" % event)
             self.set_neopixel("clear")
 
     def on_shutdown(self):
         # Turn all LEDs off
+        self._logger.debug("Clearing LEDs on shutdown")
         self.set_neopixel("clear")
 
 
