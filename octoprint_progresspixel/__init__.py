@@ -63,3 +63,4 @@ class ProgressPixelPlugin(
 
 
 __plugin_implementation__ = ProgressPixelPlugin()
+__plugin_pythoncompat__ = ">=2.7,<4"
